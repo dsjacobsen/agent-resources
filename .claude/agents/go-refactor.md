@@ -1,7 +1,7 @@
 ---
 name: go-refactor
 description: Refactors Go code to improve structure, readability, and maintainability while preserving behavior. Delegate refactoring tasks to this agent.
-model: claude-sonnet-4-20250514
+model: claude-opus-4-20250514
 allowed-tools:
   - Read
   - Write

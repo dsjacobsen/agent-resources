@@ -146,6 +146,29 @@ Expert Go knowledge covering:
 /go-doc                    # Generate docs
 ```
 
+## 🤖 Model Selection
+
+Agents use different Claude models based on task complexity:
+
+| Model | Used By | Why |
+|-------|---------|-----|
+| **Opus 4.5** | `go-reviewer`, `go-refactor`, `go-feature` | Complex reasoning, nuanced decisions, architectural thinking |
+| **Sonnet 4** | All other agents | Fast, cost-effective, highly capable for focused tasks |
+
+### Why Sonnet 4 for Most Agents?
+
+- **Speed** - Faster responses for iterative development workflows
+- **Cost** - More economical for frequent use
+- **Capability** - Highly capable for well-defined coding tasks (test generation, API building, scaffolding)
+
+### Why Opus 4.5 for Select Agents?
+
+- **`go-reviewer`** - Needs nuanced analysis of code quality, security implications, and architectural concerns
+- **`go-refactor`** - Requires careful reasoning about code structure and making safe transformations
+- **`go-feature`** - Must understand complex requirements and design appropriate solutions
+
+You can change any agent's model by editing the `model:` field in its frontmatter.
+
 ## 📚 Resources
 
 - [Claude Code Skills Documentation](https://code.claude.com/docs/en/skills)

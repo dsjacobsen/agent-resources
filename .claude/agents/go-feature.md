@@ -1,7 +1,7 @@
 ---
 name: go-feature
 description: Implements new features in Go projects following clean architecture patterns. Handles the full feature lifecycle from design to implementation. Delegate general feature implementation to this agent.
-model: claude-sonnet-4-20250514
+model: claude-opus-4-20250514
 allowed-tools:
   - Read
   - Write

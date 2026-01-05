@@ -1,7 +1,7 @@
 ---
 name: go-reviewer
 description: Reviews Go code for correctness, idiomatic patterns, performance issues, and security vulnerabilities. Delegate code review tasks to this agent.
-model: claude-sonnet-4-20250514
+model: claude-opus-4-20250514
 allowed-tools:
   - Read
   - Grep
